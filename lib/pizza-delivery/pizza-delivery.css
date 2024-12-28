@@ -1,0 +1,42 @@
+#pizza-delivery {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+#pizza-delivery .cow {
+  user-select: none;
+  position: absolute;
+  font-size: 200%;
+}
+
+#pizza-delivery .pizza {
+  position: absolute;
+  text-decoration: none;
+  user-select: none;
+}
+
+.rotate-shrink-disappear {
+  animation: rotate-shrink-disappear 1s linear forwards;
+}
+
+@keyframes rotate-shrink-disappear {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotate(-360deg) scale(6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(720deg) scale(0);
+    opacity: 0;
+  }
+}

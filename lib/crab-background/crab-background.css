@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+p,
+pre {
+  color: white;
+}
+
+#crab-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#crab-background .crab {
+  background-image: url("assets/half-crab.webp");
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+  right: 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  animation: crab-breathe 5s ease-in-out infinite;
+}
+
+@keyframes crab-breathe {
+
+  0%,
+  100% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+#crab-background .ribbon {
+  background-image: url("assets/ribbon.webp");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  animation: ribbon-breathe 10s ease-in-out infinite;
+  mask-image:
+    linear-gradient(rgb(0, 0, 0), transparent);
+}
+
+@keyframes ribbon-breathe {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1.0;
+  }
+}
